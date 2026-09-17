@@ -67,7 +67,7 @@ SOC Operations · Security Monitoring · SIEM · Threat Detection · Incident Re
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/anshnpy/anshnpy/output/github-contribution-grid-snake-dark.svg" alt="GitHub contribution activity">
+<img src="https://raw.githubusercontent.com/anshnpy/anshnpy/output/github-contribution-grid-snake-blue.svg" alt="GitHub contribution activity">
 
 </div>
 
@@ -84,4 +84,5 @@ SOC Operations · Security Monitoring · SIEM · Threat Detection · Incident Re
 </a>
 
 </div>
+
 
