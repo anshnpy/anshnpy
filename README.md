@@ -1,12 +1,15 @@
 ﻿<div align="center">
 
+<img src="profile-banner.png" alt="Anshuman Pandey - SOC Analyst" width="100%">
+
 # Anshuman Pandey
 
-**Cybersecurity Engineer · Security Researcher · Full-Stack Developer**
+**SOC Analyst · Security Operations · Threat Detection**
 
-Building security-focused products around **Malware Analysis, DFIR, SOC, Threat Detection and Security Engineering.**
+Building hands-on skills in **SOC Operations, Detection, Incident Investigation and Security Monitoring.**
 
-[![GitHub](https://img.shields.io/badge/GitHub-anshnpy-181717?style=flat-square&logo=github)](https://github.com/anshnpy)
+[![GitHub](https://img.shields.io/badge/GitHub-anshnpy-181717?style=flat-square&logo=github)](https://github.com/anshnpy)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/anshuman-pandey-b847b5287/)  
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-111111?style=flat-square&logo=vercel)](https://github.com/anshnpy/anshumanportfolio)
 
 </div>
@@ -15,31 +18,32 @@ Building security-focused products around **Malware Analysis, DFIR, SOC, Threat 
 
 ### About
 
-I build practical security tools and investigation platforms with a focus on clean interfaces, reliable backend systems and real-world analyst workflows.
+I’m focused on **SOC operations, security monitoring and incident investigation**, while building hands-on security projects to strengthen my understanding of real-world defensive workflows.
 
-My current work sits at the intersection of **cybersecurity and software engineering**.
+My current learning path covers **SIEM, log analysis, alert triage, threat detection, incident response and security tooling**.
 
 ### Selected Work
 
-**[Malware Analysis Sandbox](https://github.com/anshnpy/malware-analysis-sandbox)**  
-Advanced malware analysis platform covering static analysis and analyst-focused investigation workflows.
-
-**[Incident Response Platform](https://github.com/anshnpy/incident-response-platform)**  
-Security investigation platform for incidents, cases, evidence and response workflows.
-
-**[SOC Home Lab](https://github.com/anshnpy/soc-home-lab)**  
-Hands-on environment for security monitoring, detection and investigation.
-
-**[Cybersecurity Portfolio](https://github.com/anshnpy/anshumanportfolio)**  
-Personal portfolio showcasing security projects and technical work.
+| Project | Focus |
+| --- | --- |
+| **[Malware Analysis Sandbox](https://github.com/anshnpy/malware-analysis-sandbox)** | Malware analysis, static analysis, detection & investigation |
+| **[Incident Response Platform](https://github.com/anshnpy/incident-response-platform)** | Incident investigation, evidence handling & response workflows |
+| **[SOC Home Lab](https://github.com/anshnpy/soc-home-lab)** | Security monitoring, detection engineering & investigation |
+| **[Cybersecurity Portfolio](https://github.com/anshnpy/anshumanportfolio)** | Personal portfolio and security project showcase |
 
 ### Technologies
 
-`Python` `TypeScript` `JavaScript` `React` `FastAPI` `Node.js` `Linux` `Git`
+**Security & Systems**
+
+`Linux` `Git` `SIEM` `Networking` `Security Monitoring`
+
+**Development**
+
+`Python` `TypeScript` `JavaScript` `React` `FastAPI` `Node.js`
 
 ### Areas of Focus
 
-`Malware Analysis` · `DFIR` · `SOC` · `Threat Detection` · `Security Engineering`
+SOC Operations · Security Monitoring · SIEM · Threat Detection · Incident Response
 
 <div align="center">
 
@@ -62,3 +66,10 @@ Personal portfolio showcasing security projects and technical work.
 </a>
 
 </div>
+
+
+
+
+
+
+
