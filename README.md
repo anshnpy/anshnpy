@@ -55,25 +55,19 @@ My current learning path covers **SIEM, log analysis, alert triage, threat detec
 
 SOC Operations · Security Monitoring · SIEM · Threat Detection · Incident Response
 
+### GitHub Activity
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/anshnpy/anshnpy/output/github-contribution-grid-snake-blue.svg" alt="GitHub contribution activity" width="100%">
+</p>
 
-<div align="center">
+<p align="center">
+  <img src="profile/streak.svg" alt="GitHub streak" width="495">
+</p>
 
-<img src="https://raw.githubusercontent.com/anshnpy/anshnpy/output/github-contribution-grid-snake-blue.svg" alt="GitHub contribution activity">
-
-</div>
-
-<div align="center">
-
-<img src="profile/streak.svg" alt="GitHub streak">
-
-</div>
-
-<div align="center">
-
-<a href="https://github.com/anshnpy">
-  <img src="https://komarev.com/ghpvc/?username=anshnpy&style=flat-square&color=111111&label=Profile+Views" alt="Profile views">
-</a>
-
-</div>
+<p align="center">
+  <a href="https://github.com/anshnpy">
+    <img src="https://komarev.com/ghpvc/?username=anshnpy&style=flat-square&color=111111&label=Profile+Views" alt="Profile views">
+  </a>
+</p>
 
