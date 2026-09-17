@@ -14,11 +14,11 @@ Building hands-on skills in **SOC Operations, Detection, Incident Investigation 
 
 <p align="center">
 
-<a href="https://github.com/anshnpy"><img src="https://cdn.simpleicons.org/github/ffffff" width="18" height="18" alt="GitHub"> GitHub</a>
+<a href="https://github.com/anshnpy">GitHub</a>
 &nbsp;&nbsp;·&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/anshuman-pandey-b847b5287/"><img src="https://cdn.simpleicons.org/linkedin/ffffff" width="18" height="18" alt="LinkedIn"> LinkedIn</a>
+<a href="https://www.linkedin.com/in/anshuman-pandey-b847b5287/">LinkedIn</a>
 &nbsp;&nbsp;·&nbsp;&nbsp;
-<a href="https://anshumanportfolio.pages.dev/"><img src="https://cdn.simpleicons.org/googlechrome/ffffff" width="18" height="18" alt="Portfolio"> Portfolio</a>
+<a href="https://anshumanportfolio.pages.dev/">Portfolio</a>
 
 </p>
 
@@ -81,6 +81,7 @@ SOC Operations · Security Monitoring · SIEM · Threat Detection · Incident Re
 </a>
 
 </div>
+
 
 
 
