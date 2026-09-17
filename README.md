@@ -14,7 +14,7 @@ Building hands-on skills in **SOC Operations, Detection, Incident Investigation 
 
 [![GitHub](https://img.shields.io/badge/GitHub-anshnpy-181717?style=flat-square&logo=github)](https://github.com/anshnpy)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/anshuman-pandey-b847b5287/)  
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-111111?style=flat-square&logo=vercel)](https://github.com/anshnpy/anshumanportfolio)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-111111?style=flat-square&logo=vercel)](https://anshumanportfolio.pages.dev/)
 
 </div>
 
@@ -33,7 +33,7 @@ My current learning path covers **SIEM, log analysis, alert triage, threat detec
 | **[Malware Analysis Sandbox](https://github.com/anshnpy/malware-analysis-sandbox)** | Malware analysis, static analysis, detection & investigation |
 | **[Incident Response Platform](https://github.com/anshnpy/incident-response-platform)** | Incident investigation, evidence handling & response workflows |
 | **[SOC Home Lab](https://github.com/anshnpy/soc-home-lab)** | Security monitoring, detection engineering & investigation |
-| **[Cybersecurity Portfolio](https://github.com/anshnpy/anshumanportfolio)** | Personal portfolio and security project showcase |
+| **[Cybersecurity Portfolio](https://anshumanportfolio.pages.dev/)** | Personal portfolio and security project showcase |
 
 ### Technologies
 
@@ -59,6 +59,11 @@ SOC Operations · Security Monitoring · SIEM · Threat Detection · Incident Re
 
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/anshnpy/anshnpy/output/github-contribution-grid-snake-dark.svg" alt="GitHub contribution snake">
+
+</div>
+<div align="center">
+
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=anshnpy&hide_border=true&theme=transparent">
 
 </div>
@@ -70,12 +75,4 @@ SOC Operations · Security Monitoring · SIEM · Threat Detection · Incident Re
 </a>
 
 </div>
-
-
-
-
-
-
-
-
 
