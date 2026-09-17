@@ -55,15 +55,7 @@ My current learning path covers **SIEM, log analysis, alert triage, threat detec
 
 SOC Operations · Security Monitoring · SIEM · Threat Detection · Incident Response
 
-### GitHub Activity
 
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=anshnpy&show_icons=true&hide_border=true&theme=transparent&rank_icon=github&include_all_commits=true" height="165">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=anshnpy&layout=compact&hide_border=true&theme=transparent&langs_count=8" height="165">
-
-</div>
 
 <div align="center">
 
@@ -73,7 +65,7 @@ SOC Operations · Security Monitoring · SIEM · Threat Detection · Incident Re
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=anshnpy&hide_border=true&theme=transparent" alt="GitHub streak">
+<img src="profile/streak.svg" alt="GitHub streak">
 
 </div>
 
@@ -84,5 +76,4 @@ SOC Operations · Security Monitoring · SIEM · Threat Detection · Incident Re
 </a>
 
 </div>
-
 
