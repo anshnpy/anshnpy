@@ -2,6 +2,10 @@
 
 <img src="profile-banner.png" alt="Anshuman Pandey - SOC Analyst" width="100%">
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=2600&pause=900&color=3B82F6&center=true&vCenter=true&width=700&lines=SOC+Analyst;Security+Operations;Threat+Detection;Incident+Investigation;Always+Learning+%2F+Always+Building" alt="Typing introduction">
+</p>
+
 # Anshuman Pandey
 
 **SOC Analyst · Security Operations · Threat Detection**
@@ -66,6 +70,8 @@ SOC Operations · Security Monitoring · SIEM · Threat Detection · Incident Re
 </a>
 
 </div>
+
+
 
 
 
