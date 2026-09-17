@@ -1,0 +1,191 @@
+﻿const fs = require("fs");
+
+const svg = `
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="380" viewBox="0 0 1400 380">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060A0F"/>
+      <stop offset="55%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#07131C"/>
+    </linearGradient>
+
+    <linearGradient id="cyanLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00B7FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00B7FF"/>
+      <stop offset="100%" stop-color="#00B7FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="glow">
+      <stop offset="0%" stop-color="#00B7FF" stop-opacity=".10"/>
+      <stop offset="100%" stop-color="#00B7FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28"
+            fill="none"
+            stroke="#12314A"
+            stroke-opacity=".28"
+            stroke-width="1"/>
+    </pattern>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="380" rx="18" fill="url(#bg)"/>
+  <rect width="1400" height="380" rx="18" fill="url(#grid)"/>
+
+  <!-- Ambient glow -->
+  <ellipse cx="760" cy="175" rx="360" ry="180" fill="url(#glow)"/>
+
+  <!-- SOC monitor silhouettes -->
+  <g opacity=".18" fill="none" stroke="#1A4D73">
+    <rect x="530" y="60" width="210" height="115" rx="6"/>
+    <rect x="770" y="45" width="250" height="135" rx="6"/>
+    <rect x="1050" y="80" width="190" height="105" rx="6"/>
+  </g>
+
+  <!-- Monitor telemetry -->
+  <g fill="none" stroke="#0078B8" opacity=".30">
+    <path d="M550 145 L575 128 L600 138 L625 105 L650 120 L680 92 L720 110"/>
+    <path d="M800 145 L825 125 L848 140 L870 102 L900 120 L930 82 L970 110"/>
+    <path d="M1070 150 L1095 135 L1120 145 L1140 115 L1170 125 L1205 98"/>
+  </g>
+
+  <!-- World map style nodes -->
+  <g fill="#00B7FF" opacity=".65">
+    <circle cx="585" cy="93" r="3"/>
+    <circle cx="628" cy="117" r="2.5"/>
+    <circle cx="684" cy="79" r="3"/>
+    <circle cx="835" cy="96" r="3"/>
+    <circle cx="904" cy="72" r="2.5"/>
+    <circle cx="970" cy="124" r="3"/>
+    <circle cx="1092" cy="112" r="2.5"/>
+    <circle cx="1160" cy="90" r="3"/>
+  </g>
+
+  <!-- Left rail -->
+  <rect x="30" y="55" width="3" height="132" rx="2" fill="#00B7FF"/>
+
+  <g font-family="JetBrains Mono, Consolas, monospace"
+     font-size="14"
+     letter-spacing="3.5"
+     fill="#94A3B8">
+    <text x="52" y="72">SOC OPERATIONS</text>
+    <text x="52" y="102">THREAT DETECTION</text>
+    <text x="52" y="132">INCIDENT RESPONSE</text>
+    <text x="52" y="162">CONTINUOUS LEARNING</text>
+  </g>
+
+  <!-- Main identity -->
+  <text x="700" y="115"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="20"
+        font-weight="700"
+        letter-spacing="8"
+        fill="#7DD3FC">
+    ANSHUMAN PANDEY
+  </text>
+
+  <text x="700" y="192"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="76"
+        font-weight="800"
+        letter-spacing="2"
+        fill="#F5F7FA">
+    SOC
+  </text>
+
+  <text x="925" y="192"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="76"
+        font-weight="800"
+        letter-spacing="2"
+        fill="#00B7FF">
+    ANALYST
+  </text>
+
+  <!-- Role line -->
+  <text x="812" y="228"
+        text-anchor="middle"
+        font-family="JetBrains Mono, Consolas, monospace"
+        font-size="15"
+        letter-spacing="4"
+        fill="#8EDFFF">
+    MONITOR · DETECT · INVESTIGATE · RESPOND
+  </text>
+
+  <!-- Center divider -->
+  <line x1="420" y1="255" x2="1120" y2="255"
+        stroke="#1F2937"
+        stroke-width="1"/>
+
+  <!-- Right status -->
+  <g font-family="JetBrains Mono, Consolas, monospace"
+     font-size="13"
+     letter-spacing="3">
+    <text x="1160" y="72" fill="#64748B">STATUS</text>
+    <text x="1160" y="96" fill="#00B7FF">ACTIVE</text>
+
+    <text x="1160" y="138" fill="#64748B">ALERTS</text>
+    <text x="1250" y="138" fill="#F5F7FA">07</text>
+
+    <text x="1160" y="172" fill="#64748B">EVENTS</text>
+    <text x="1250" y="172" fill="#F5F7FA">1.8K</text>
+
+    <text x="1160" y="206" fill="#64748B">THREATS</text>
+    <text x="1250" y="206" fill="#00B7FF">03</text>
+  </g>
+
+  <!-- Decorative telemetry lines -->
+  <g stroke="#12314A" stroke-width="1" opacity=".7">
+    <line x1="52" y1="220" x2="310" y2="220"/>
+    <line x1="1120" y1="235" x2="1350" y2="235"/>
+    <line x1="52" y1="288" x2="320" y2="288"/>
+    <line x1="1080" y1="290" x2="1350" y2="290"/>
+  </g>
+
+  <!-- Scan track -->
+  <rect x="50" y="315" width="1300" height="2" fill="#112A46"/>
+  <rect x="50" y="315" width="150" height="2" fill="url(#cyanLine)"/>
+
+  <!-- Footer -->
+  <text x="52" y="350"
+        font-family="JetBrains Mono, Consolas, monospace"
+        font-size="12"
+        letter-spacing="3"
+        fill="#475569">
+    SECURITY MONITORING // DETECTION // INVESTIGATION
+  </text>
+
+  <text x="1348" y="350"
+        text-anchor="end"
+        font-family="JetBrains Mono, Consolas, monospace"
+        font-size="12"
+        letter-spacing="3"
+        fill="#00B7FF">
+    SYSTEM ONLINE
+  </text>
+
+  <!-- Border -->
+  <rect x="1" y="1" width="1398" height="378"
+        rx="18"
+        fill="none"
+        stroke="#1F2937"
+        stroke-width="1"/>
+</svg>
+`;
+
+fs.mkdirSync("profile", { recursive: true });
+fs.writeFileSync("profile-banner.svg", svg.trim(), "utf8");
+
+console.log("Created profile-banner.svg");
