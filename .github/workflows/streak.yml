@@ -1,14 +1,15 @@
 ﻿name: Update GitHub Streak
 
 on:
+  repository_dispatch:
+    types: [profile_update]
+  workflow_dispatch:
   push:
     branches:
       - main
     paths-ignore:
       - "profile/streak.svg"
-  schedule:
-    - cron: "0 3 * * *"
-  workflow_dispatch:
+
 permissions:
   contents: write
 
@@ -37,4 +38,3 @@ jobs:
           fi
           git commit -m "chore: update streak stats"
           git push
-
