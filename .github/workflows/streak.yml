@@ -4,11 +4,14 @@ on:
   repository_dispatch:
     types: [profile_update]
   workflow_dispatch:
+  schedule:
+    - cron: "0 3 * * *"
   push:
     branches:
       - main
     paths-ignore:
       - "profile/streak.svg"
+      - ".github/workflows/streak.yml"
 
 permissions:
   contents: write
@@ -20,21 +23,23 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Generate streak stats
-        uses: zients/github-readme-streak-stats@v2
+      - uses: actions/setup-node@v5
         with:
-          options: user=${{ github.repository_owner }}&theme=dark&hide_border=true&card_width=495&card_height=195&disable_animations=false&background=0D1117&stroke=1F2937&ring=00B7FF&fire=00B7FF&currStreakNum=F5F7FA&sideNums=F5F7FA&currStreakLabel=00B7FF&sideLabels=E5E7EB&dates=94A3B8
-          path: profile/streak.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          node-version: 22
 
-      - name: Commit streak stats
+      - name: Generate native GitHub contribution stats
+        run: node scripts/generate-stats.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit generated stats
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile/streak.svg
           if git diff --cached --quiet -- profile/streak.svg; then
-            echo "No streak SVG changes to commit."
+            echo "No stats changes."
             exit 0
           fi
-          git commit -m "chore: update streak stats"
+          git commit -m "chore: update GitHub contribution stats"
           git push
