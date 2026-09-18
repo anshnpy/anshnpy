@@ -1,6 +1,11 @@
 ﻿name: Update GitHub Streak
 
 on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "profile/streak.svg"
   schedule:
     - cron: "0 3 * * *"
   workflow_dispatch:
