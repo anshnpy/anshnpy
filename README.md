@@ -71,3 +71,6 @@ SOC Operations · Security Monitoring · SIEM · Threat Detection · Incident Re
   </a>
 </p>
 
+<p align="center">
+  <img src="profile/rocket-flight.gif" alt="Rocket animation" width="150">
+</p>
