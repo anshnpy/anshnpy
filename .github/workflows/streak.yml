@@ -4,7 +4,8 @@ on:
   repository_dispatch:
     types: [profile_update]
   workflow_dispatch:
-  schedule:`r`n    - cron: "*/5 * * * *"
+  schedule:
+    - cron: "*/5 * * * *"
   push:
     branches:
       - main
@@ -42,4 +43,5 @@ jobs:
           fi
           git commit -m "chore: update GitHub contribution stats"
           git push
+
 

@@ -4,7 +4,8 @@ on:
   repository_dispatch:
     types: [profile_update]
   workflow_dispatch:
-  schedule:`r`n    - cron: "*/5 * * * *"
+  schedule:
+    - cron: "*/5 * * * *"
   push:
     branches:
       - main
@@ -35,4 +36,5 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
